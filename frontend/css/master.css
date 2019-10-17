@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+  background-color: black;
+  color: black;
+  background-image: url(fundo.jpg);
+}
+p{
+  text-align: justify;
+  text-indent: 40px;
+}
+figure.fcenter {
+display: block;
+padding: 3px;
+text-align: center;
+border: 8px solid white;
+box-shadow: 1px 1px 4px black;
+position:sticky
+left: 25%;
+}
+
+figure.fcenter img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
