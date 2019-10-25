@@ -3,7 +3,8 @@
   **Regras de requisitos:**
   
   
-    1- Todos os Requisitos Funcionais e Não funcionais devem estar seguidos de um códio proprio RNF(Requisitos Não funcionais) e RF(Requisitos Funcionais)- [RF-XXX]
+    1- Todos os Requisitos Funcionais e Não funcionais devem estar seguidos de um códio proprio
+    RNF(Requisitos Não funcionais) e RF(Requisitos Funcionais)- [RF-XXX]
     2- Evitar uso de expressões que permitem interpretações diversas.
     3- Definir um unico requisito por vez.
     
