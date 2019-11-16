@@ -174,3 +174,11 @@ width: 30px;
 height: 30px;
 margin-bottom: 15px;
 }
+/*-------------------------------*/
+div#cclientes{
+display: block;
+margin-left: 100 px;
+margin-right: 100 px;
+border-right: 4px solid black;
+border-left: 4px solid black;
+}
