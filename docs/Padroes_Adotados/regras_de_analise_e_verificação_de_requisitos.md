@@ -8,6 +8,7 @@
     2- Evitar uso de expressões que permitem interpretações diversas, 
     tais como: "amigáveis", "entretanto", "mas", "geralmente".
     3- Definir um unico requisito por vez.
+    4- Evitar frases com mais de 8 palavras.
     
     
 **Requisitos Funcionais**
