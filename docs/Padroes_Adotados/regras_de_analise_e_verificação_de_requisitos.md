@@ -5,7 +5,7 @@
   
     1- Todos os Requisitos Funcionais e Não funcionais devem estar seguidos de um códio proprio
     RNF(Requisitos Não funcionais) e RF(Requisitos Funcionais)- [RF-XXX]
-    2- Evitar uso de expressões que permitem interpretações diversas.
+    2- Evitar uso de expressões que permitem interpretações diversas, tais como: "amigáveis", "entretanto", "mas", "geralmente".
     3- Definir um unico requisito por vez.
     
     
