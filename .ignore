@@ -1,0 +1,4 @@
+# Para todos os arquivos de subpastas localizados na pasta docs/
+docs/
+# Para o próprio gitignore
+.ignore

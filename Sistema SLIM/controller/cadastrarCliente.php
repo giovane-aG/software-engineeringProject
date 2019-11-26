@@ -1,36 +1,28 @@
-<?PHP
+<?php
 
-$nome = $_POST('cnome');
-$cpf = $_POST('ccpf');
-$email = $_POST('cemail');
-$senha = $_POST('csenha')
-$endereco = $_POST('cendereco');
-$cidade = $_POST('ccidade');
-$estado = $_POST('cestado');
-$telefone = $_POST('ctel');
+include_once '..\model\Cliente.php';
+include_once '..\persistence\Connection.php';
+include_once '..\persistence\ClienteDAO.php';
 
-echo "<html><body>
-        <h1> ".$nome." ".$cpf." ".$email." ".$senha." ".$endereco." ".$cidade." ".$estado." ".$telefone."
-    </body>
-</html>;"
+$nome = $_POST['cnome'];
+$cpf = $_POST['ccpf'];
+$email = $_POST['cemail'];
+$senha = $_POST['csenha'];
+$endereco = $_POST['cendereco'];
+$cidade = $_POST['ccidade'];
+$estado = $_POST['cestado'];
+$telefone = $_POST['ctel'];
 
-$serverName = "localhost";
-$userName = "root";
-$password = "";
-$dataBase =
+$cliente = new Cliente($nome, $cpf, $email, $senha, $endereco, $cidade, $estado, $telefone);
 
-$connection = mysqli_connect($serverName, $userName, $password, $dataBase);
+$cliente->getNome();
 
-if(!$connection) {
-    die("Erro de conexão: ". $connection->connection_error);
-}
+$conexao = new Connection();
+$conn = $conexao->getConnection();
 
-$sql = "INSERT INTO cliente(Nome, Cpf, Email, Senha, Endereço, Cidade, Estado, Telefone) VALUES ('$nome','$cpf','$email','$senha','$endereco','$cidade','$estado','$telefone')"
+$clienteDAO = new ClienteDAO();
+$clienteDAO->salvar($cliente,$conn);
 
-if(connection->query($sql) == TRUE) {
-    echo "Cliente salvo";
-} else {
-    echo "Erro ao cadastrar: " <br> .$connection->error;
-}
+
 
 ?>
