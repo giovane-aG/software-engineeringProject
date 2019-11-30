@@ -32,6 +32,13 @@ class ClienteDAO {
         return $res;
     }
 
+    function excluirCliente($cpf, $conexao) {
+        $sql = "DELETE FROM cliente WHERE Cpf =".$cpf;
+        $res = $conexao->query($sql);
+    
+        return $res;
+    }
+
 }
 
 ?>
