@@ -38,6 +38,7 @@ tr:nth-child(even) {
         echo "<td>".$registro['Tipo'] ."</td>".
         "<td>".$registro['Id'] ."</td>".
         "<td>".$registro['Nome'] ."</td>".
+        "<td>".$registro['Preco'] ."</td>".
         "<td>".$registro['Desc'] ."</td>".
         "<br>";
         echo"</tr>";
