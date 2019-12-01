@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+	<title>Bem vindo!</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css"/>
+</head>
+<body>
+<div id="interface">
+	<header id="cabecalho">
+	<hgroup>
+		<h2>Cadastrar produtos</h2>
+	</hgroup>
+<a href="menu_admin.html"> <img class="uicon" src="imagens/user.png" alt=""></a>
+<nav id="menu">
+		<h1>Menu Principal</h1>
+<ul>
+		<li><a href="index.html">Página Inicial</a></li>
+		<li><a href="clientes.html">Clientes</a></li>
+		<li><a href="produtos.html">Produtos</a></li>
+		<li><a href="info.html">Sobre-nós</a></li>
+</ul>
+</nav>
+</header>
+<br> <br>
+<div id= "cproduto">
+  <form  action="cadastrarInstrumento.php" method="POST" enctype="multipart/form-data">
+    <fieldset>
+      <legend> Tipo do Instrumento:</legend>
+  <br>
+  <input type="radio" name="ptipo" value="cordas"> Cordas<br>
+  <input type="radio" name="ptipo" value="teclas"> Teclas<br>
+  <input type="radio" name="ptipo" value="sopro"> Sopro<br>
+  <input type="radio" name="ptipo" value="outro"> Outro<br><br>
+ID:
+	 <input type="number" name="pid" placeholder="0" min="1"  max="999">
+	 <br>
+</fieldset>
+<br>
+  <fieldset>
+ <legend>Informações tecnicas</legend>
+  Modelo do Instrumento:<br>
+  <input type="text" name="pnome" placeholder="Digite o Modelo do Instrumento"><br>
+	Preço do Instrumento: <br>
+  <input type="text" name="ppreco" placeholder="Preco da diaria"><br>
+  Descrição do Produto:<br>
+   <input type="text" textarea name="pdescr" cols="110" rows="5" placeholder="Descreva o Produto" wrap="hard"></textarea> <br>
+  </fieldset> <br>
+  <input type="submit" value="Cadastrar">
+</form>
+
+</script>
+</div>
+ <footer id="rodape"> <br> Copyright @ RPG Corp 2019</footer>
+</div>
+</body>
+</html>
