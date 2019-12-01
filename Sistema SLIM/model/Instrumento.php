@@ -1,26 +1,33 @@
 <?php
-
 class Instrumento {
-    private $nome;
+    private $tipo;
     private $id;
-    private $valorLoc;
+    private $nome;
+    private $preco;
+    private $desc;
 
-    function __construct($cnome, $cid, $cvalor) {
-        $this->nome = $cnome;
-        $this->id = $cid;
-        $this->valorLoc = $cvalor;
+    function _construct($vtipo, $vid, $vnome, $vpreco, $vdesc) {
+        $this->tipo = $vtipo;
+        $this->id = $vid;
+        $this->nome = $vnome;
+        $this->preco = $vpreco;
+        $this->desc = $vdesc;
     }
 
-    function getNome() {
-        return $this->nome;
+    function getTipo() {
+        return $this->tipo;
     }
     function getId() {
         return $this->id;
     }
-    function getValorLoc() {
-        return $this->valorLoc;
+    function getNome() {
+        return $this->nome;
     }
-
+    function getPreco(){
+        return $this->preco;
+    }
+    function getDesc() {
+        return $this->desc;
+    }
 }
-
 ?>

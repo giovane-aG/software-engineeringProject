@@ -9,10 +9,11 @@ include_once '..\persistence\instrumentoDAO.php';
 $tipo = $_POST['ptipo'];
 $id = $_POST['pid'];
 $nome = $_POST['pnome'];
-$desc = $_POST['psenha'];
-$instrumento = new Instrumento($tipo, $id, $nome, $desc);
+$preco= $_POST['ppreco'];
+$desc = $_POST['pdesc'];
+$instrumento = new Instrumento($tipo, $id, $nome,$preco,$desc);
 $conexao = new Connection();
 $conn = $conexao->getConnection();
 $instrumentoDAO = new instrumentoDAO();
-$instrumentoDAO->salvar($Instrumento,$conn);
+$instrumentoDAO->salvar($instrumento,$conn);
 ?>
