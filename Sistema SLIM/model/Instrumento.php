@@ -3,12 +3,14 @@ class Instrumento {
     private $tipo;
     private $id;
     private $nome;
+    private $preco;
     private $desc;
 
-    function _construct($vtipo, $vid, $vnome, $vdesc) {
+    function _construct($vtipo, $vid, $vnome, $vpreco, $vdesc) {
         $this->tipo = $vtipo;
         $this->id = $vid;
         $this->nome = $vnome;
+        $this->preco = $vpreco;
         $this->desc = $vdesc;
     }
 
@@ -20,6 +22,9 @@ class Instrumento {
     }
     function getNome() {
         return $this->nome;
+    }
+    function getPreco(){
+        return $this->preco;
     }
     function getDesc() {
         return $this->desc;
