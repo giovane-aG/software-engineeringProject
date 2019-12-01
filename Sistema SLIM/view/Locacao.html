@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+	<title>Bem vindo!</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css"/>
+</head>
+<body>
+<div id="interface">
+	<header id="cabecalho">
+	<hgroup>
+		<h2>Cadastrar produtos</h2>
+	</hgroup>
+<a href="menu_admin.html"> <img class="uicon" src="imagens/user.png" alt=""></a>
+<nav id="menu">
+		<h1>Menu Principal</h1>
+<ul>
+		<li><a href="index.html">Página Inicial</a></li>
+		<li><a href="clientes.html">Clientes</a></li>
+		<li><a href="produtos.html">Produtos</a></li>
+		<li><a href="info.html">Sobre-nós</a></li>
+</ul>
+</nav>
+</header>
+<br> <br>
+<div id= "cproduto">
+  <form  action="Locacao.php" method="POST" enctype="multipart/form-data">
+	<fieldset>
+		<legend>Efetue uma nova Locação</legend>
+		Nome do Cliente:
+		<input type="text" name="lnome" placeholder="Digite o nome do Cliente">
+		<br> <br>
+		ID do Instrumento:
+		<input type="text" name="liid" placeholder="Digite o ID do Instrumento">
+		<br> <br>
+		Quantidade de dias:
+		<input type="number" name="pid" placeholder="0" min="1"  max="999">
+
+	</fieldset>
+	<br> <br>
+  <input type="submit" value="Concluir Locação">
+</form>
+
+</script>
+</div>
+ <footer id="rodape"> <br> Copyright @ RPG Corp 2019</footer>
+</div>
+</body>
+</html>
