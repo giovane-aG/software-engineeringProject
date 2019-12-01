@@ -2,10 +2,11 @@
 class instrumentoDAO {
     function _construct() {}
     function salvar($instrumento, $conexao) {
-        $sql = "INSERT INTO instrumento(Tipo, Id, Nome, Desc) VALUES ('" .
+        $sql = "INSERT INTO instrumento(Tipo, Id, Nome, Preco, Desc) VALUES ('" .
         $instrumento->getTipo() ."','" .
         $instrumento->getId() ."','" .
         $instrumento->getNome() ."','".
+        $instrumento->getPreco() ."','".
         $instrumento->getDesc() ."')";
         echo "<br>" . $sql;
         if($conexao->query($sql) == TRUE) {
