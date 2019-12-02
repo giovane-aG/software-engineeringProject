@@ -1,8 +1,7 @@
 <?php
-//include_once '..\persistence\Connection.php';
-//include_once '..\persistence\instrumentoDAO.php';
-include_once 'Connection.php';
-include_once 'instrumentoDAO.php';
+include_once '..\persistence\Connection.php';
+include_once '..\persistence\instrumentoDAO.php';
+
 $conexao = new Connection();
 $conn = $conexao->getConnection();
 $id = $_POST['pid'];
