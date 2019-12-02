@@ -1,9 +1,8 @@
 <?php
-//include_once '..\Persistence\Connection.php'
-//include_once '..\Persistence\instrumentoDao'
-include_once 'Connection.php';
-include_once 'Instrumento.php';
-include_once 'instrumentoDAO.php';
+include_once '..\Persistence\Connection.php'
+include_once '..\Persistence\instrumentoDao'
+include_once '..\Model\Instrumento.php';
+
 
     $vtipo = $_POST['ptipo'];
     $vid = $_POST['pid'];
