@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+	<title>Bem vindo!</title>
+	<link rel="stylesheet" type="text/css" href="css/master.css"/>
+</head>
+<body>
+<div id="interface">
+	<header id="cabecalho">
+	<hgroup>
+		<h2>Seu Perfil!</h2>
+	</hgroup>
+<a href="menu_admin.html"> <img class="uicon" src="imagens/user.png" alt=""></a>
+<nav id="menu">
+		<h1>Menu Principal</h1>
+<ul>
+		<li><a href="index.html">Página Inicial</a></li>
+		<li><a href="clientes.html">Clientes</a></li>
+		<li><a href="produtos.html">Produtos</a></li>
+		<li><a href="info.html">Sobre-nós</a></li>
+</ul>
+</nav>
+</header>
+<br> <br>
+<div id ="profile">
+<? php session_start();
+
+	echo "<h1>Nome :". $_SESSION['Nome']; . "</h1><br> <br>
+		<h1>CPF :". $_SESSION['login'];. "</h1><br> <br>
+		<h1>Email : ".$_SESSION['Email'];. "</h1><br> <br>
+		<h1>Senha :". $_SESSION['Senha']; ."</h1><br> <br>
+		<h1>Endereço :". $_SESSION['Endereco']; ."</h1><br> <br>
+		<h1>Cidade :". $_SESSION['Cidade']; ."</h1><br> <br>
+		<h1>Estado :". $_SESSION['Estado']; ."</h1><br> <br>
+		<h1>Telefone :". $_SESSION['Telefone'];."</h1><br> <br>"
+?>
+
+<a href="alterarCliente.php"><h3>Alterar Perfil</h3></a>
+<a href="Historico.php"><h3>   Histórico   </h3></a>
+
+</div>
+
+ <footer id="rodape"> <br> Copyright @ RPG Corp 2019</footer>
+</div>
+</body>
+</html>
