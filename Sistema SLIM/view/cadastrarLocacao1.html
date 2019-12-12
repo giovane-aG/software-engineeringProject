@@ -10,7 +10,7 @@
 <div id="interface">
 	<header id="cabecalho">
 	<hgroup>
-		<h2>Menu do administrador</h2>
+		<h2>Cadastrar produtos</h2>
 	</hgroup>
 <a href="menu_admin.html"> <img class="uicon" src="imagens/user.png" alt=""></a>
 <nav id="menu">
@@ -24,25 +24,20 @@
 </nav>
 </header>
 <br> <br>
-<div id="clientes">
-<ul>
-	<fieldset>
-		<legend>Administrar Instrumentos</legend>
-		<li><a href="cadastrarInstrumento.html">Cadastrar Instrumentos</a></li>
-		<li><a href="alterarInstrumento.html">Alterar Instrumentos</a></li>
-		<li><a href="consultarInstrumento.php">ListarInstrumentos</a></li>
-		<li><a href="excluirInstrumento.html">Excluir</a></li>
-	</fieldset>
-<fieldset>
-	<legend>Administrar Locacoes</legend>
-	<li><a href="cadastrarLocacao1.html">Locar</a></li>
-	<li><a href="alterarLocacao.html">Alterar Locação</a></li>
-	<li><a href="excluirLocacao.html">Devolução</a></li>
-	<li><a href="consultarLocacao.php">Listar Locacoes</a></li>
-</fieldset>
-
-
-</ul>
+<div id= "cproduto">
+  <form  action="cadastrarLocacao1.php" method="POST" enctype="multipart/form-data">
+    <fieldset>
+      <legend>Digite o ID do Instrumento:</legend>
+			  <input type="text" name="lid" placeholder="Digite o ID do Instrumento"><br>
+			</fieldset>
+			<fieldset>
+				<legend>Digite a quantidade de dias de locação</legend>
+				Dias de Locacao: <br>
+			  <input type="number" name="ldia" placeholder="0" min="1"  max="999">
+			</fieldset>
+  <br>
+  <input type="submit" value="Continuar">
+</form>
 </div>
  <footer id="rodape"> <br> Copyright @ RPG Corp 2019</footer>
 </div>

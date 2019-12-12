@@ -10,7 +10,7 @@
 <div id="interface">
 	<header id="cabecalho">
 	<hgroup>
-		<h2>Menu do administrador</h2>
+		<h2>Excluir locacao por ID</h2>
 	</hgroup>
 <a href="menu_admin.html"> <img class="uicon" src="imagens/user.png" alt=""></a>
 <nav id="menu">
@@ -24,27 +24,12 @@
 </nav>
 </header>
 <br> <br>
-<div id="clientes">
-<ul>
-	<fieldset>
-		<legend>Administrar Instrumentos</legend>
-		<li><a href="cadastrarInstrumento.html">Cadastrar Instrumentos</a></li>
-		<li><a href="alterarInstrumento.html">Alterar Instrumentos</a></li>
-		<li><a href="consultarInstrumento.php">ListarInstrumentos</a></li>
-		<li><a href="excluirInstrumento.html">Excluir</a></li>
-	</fieldset>
-<fieldset>
-	<legend>Administrar Locacoes</legend>
-	<li><a href="cadastrarLocacao1.html">Locar</a></li>
-	<li><a href="alterarLocacao.html">Alterar Locação</a></li>
-	<li><a href="excluirLocacao.html">Devolução</a></li>
-	<li><a href="consultarLocacao.php">Listar Locacoes</a></li>
-</fieldset>
-
-
-</ul>
+<form action="excluirLocacao.php" method="POST" style="padding: 10px; margin-top: 10px;">
+  Digite o ID da Locacao :
+<input type="text" name='lid' placeholder="Digite o ID da Locacao"/>
+  <input type="submit" value="Deletar">
+</form>
 </div>
  <footer id="rodape"> <br> Copyright @ RPG Corp 2019</footer>
-</div>
 </body>
 </html>
