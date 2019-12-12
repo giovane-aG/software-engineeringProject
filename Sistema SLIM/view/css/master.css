@@ -125,9 +125,9 @@ footer#rodape{
 div#clientes li{
   display: inline-block;
   background-color: black;
-  padding: 6px;
-  padding-bottom: 12px;
+  padding: 2px;
   margin: 30px;
+  margin-bottom: 5px;
   margin-right: 80px;
   transition: background-color 0.5s;
   border: 4px solid darkred;
@@ -143,7 +143,7 @@ div#clientes li:hover {
 
 div#clientes a{
   font-family: 'Concert One', cursive;
-  font-size: 35px;
+  font-size: 25px;
   color: white;
   text-decoration: none;
   /*text-shadow: 1px 1px 3px white;*/
@@ -188,6 +188,12 @@ div#cproduto{
 display: block;
 margin-left: 100px;
 margin-right: 400px;
+}
+div#cproduto h3{
+  font-size: 15px;
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 /*--------------login-----------*/
