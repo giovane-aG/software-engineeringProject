@@ -25,14 +25,17 @@
 </header>
 <br> <br>
 <div id ="profile">
-<h1>Nome : <?php echo $_session['Nome']; ?> </h1><br> <br>
-<h1>CPF : <?php echo $_session['Cpf']; ?> </h1><br> <br>
-<h1>Email : <?php echo $_session['Email']; ?> </h1><br> <br>
-<h1>Senha : <?php echo $_session['Senha']; ?> </h1><br> <br>
-<h1>Endereço : <?php echo $_session['Endereco']; ?> </h1><br> <br>
-<h1>Cidade : <?php echo $_session['Cidade']; ?> </h1><br> <br>
-<h1>Estado : <?php echo $_session['Estado']; ?> </h1><br> <br>
-<h1>Telefone : <?php echo $_session['Telefone']; ?> </h1><br> <br>
+<?php session_start();
+
+	echo "<h1>Nome :". $_SESSION['Nome']; . "</h1><br> <br>
+		<h1>CPF :". $_SESSION['Cpf'];. "</h1><br> <br>
+		<h1>Email : ".$_SESSION['Email'];. "</h1><br> <br>
+		<h1>Senha :". $_SESSION['Senha']; ."</h1><br> <br>
+		<h1>Endereço :". $_SESSION['Endereco']; ."</h1><br> <br>
+		<h1>Cidade :". $_SESSION['Cidade']; ."</h1><br> <br>
+		<h1>Estado :". $_SESSION['Estado']; ."</h1><br> <br>
+		<h1>Telefone :". $_SESSION['Telefone'];."</h1><br> <br>"
+?>
 
 <a href="alterarCliente.php"><h3>Alterar Perfil</h3></a>
 <a href="Historico.php"><h3>   Histórico   </h3></a>
